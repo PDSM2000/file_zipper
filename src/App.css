@@ -1,0 +1,133 @@
+*{
+  box-sizing: content-box;
+}
+.App{
+  position:fixed;
+  left: 0px;
+  right: 0px;
+  width:100%;
+  height: 100%;
+}
+.header{
+  position:relative;
+  width:100%;
+  height: 60px;
+  background-color: rgb(186, 205, 211);
+}
+.navbar{
+  position: relative;
+  color:rgb(0, 0, 0);
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-container{
+  position:relative;
+  width:100%;
+  height:93%;
+}
+
+.display-container{
+  position: relative;
+  width:100%;
+  height:80%;
+  display:flex;
+  text-align: center;
+  
+}
+.display-container-1{
+  position: relative;
+  width:50%;
+  height:100%;
+  border-right:2px solid silver; 
+  overflow-y:auto;
+  display:block;
+}
+.display-container-2{
+  position: relative;
+  width:50%;
+  height:100%;
+  border-left: 2px solid silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: larger;
+}
+#input-element{
+  display: none;
+}
+.button-container{
+  position: relative;
+  width:100%;
+  height:20%;
+  background-color: rgb(214, 214, 191);
+  display: flex;
+  align-items:center ;
+  justify-content:space-around;
+}
+.button-container-1,.button-container-3{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(29, 111, 29);
+  color: white;
+  width:100px;
+  height:50px;
+  text-align: center;
+  border-radius: 25px;
+
+  transition: font-size 0.5s,background-color 0.5s;
+}
+.button-container-1:hover,.button-container-3:hover{
+  background-color: rgb(6, 158, 6);
+  font-size: larger;
+  text-align: center;
+  cursor: pointer;
+}
+.button-container-2{
+ width:150px;
+ display: flex;
+ flex-flow: column;
+ align-items: center;
+ justify-content: center;
+}
+.file-input-button{
+  width:120px;
+  height:50px;
+  background-color: cadetblue;
+  border: 0px;
+  border-radius: 25px;
+  cursor: pointer;
+
+  transition: width 0.5s,height 0.5s,background-color 0.5s;
+}
+.input-txt-logo{
+  width:25px;
+}
+.file-input-button:hover{
+  width:150px;
+  height:60px;
+  border-radius: 30px;
+  background-color: rgb(92, 63, 122);
+}
+.file-input-button .tooltip-text{
+  visibility: hidden;
+  width: 120px;
+  bottom:60%;
+  left: 50%;
+  margin-left: -60px;
+  background-color: rgb(249, 247, 247);
+  color: rgb(57, 50, 50);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+}
+
+.file-input-button:hover .tooltip-text{
+  visibility: visible;
+}
